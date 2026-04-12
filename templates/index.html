@@ -1,0 +1,5 @@
+<h1>DocManager Internal Tool</h1>
+<form method="post" action="/login"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><input name="username" placeholder="username"><button>Login</button></form>
+<form method="post" action="/upload" enctype="multipart/form-data"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><input type="file" name="file"><button>Upload</button></form>
+<form method="post" action="/logout"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"><button>Logout</button></form>
+<a href="/search?q=test">Search</a>
